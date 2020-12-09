@@ -13,6 +13,7 @@ html {
 
 body {
     background-color: #121212;
+    overflow-x: hidden;
 }
 
 body::after {
@@ -23,7 +24,7 @@ body::after {
     height: 100%;
     content: "";
     background-image: url(../img/noise.gif);
-    opacity: .03;
+    opacity: .02;
     z-index: 100000;
     pointer-events: none;
 }
@@ -35,7 +36,7 @@ body::after {
 /* NOISE */
 #logo,
 a,
-.title-filled h1 {
+.title-filled {
     color: rgba(245, 245, 245, 0.9);
     background-clip: text;
     -webkit-background-clip: text;
@@ -182,18 +183,28 @@ li a:hover:before {
 .content-home {
     margin: auto;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.title-outline h1,
-.title-filled h1 {
+.title {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-left: 50px;
+}
+
+.title-outline,
+.title-filled {
     font-size: 7vw;
     font-family: aktiv-grotesk-extended, sans-serif;
     font-weight: 800;
-    position: absolute;
-    top: 0;
+    grid-column: 1;
+    grid-row: 1/2;
+    align-self: flex-end;
 }
 
-.title-outline h1 {
+.title-outline {
+    position: relative;
     color: transparent;
     -webkit-text-stroke: 1px #F5F5F5;
     z-index: 3;
@@ -201,39 +212,36 @@ li a:hover:before {
 
 #planet {
     max-width: 400px;
-    width: 40vw;
-    position: absolute;
-    top: -150%;
-    right: -80%;
+    width: 25vw;
     z-index: 2;
+    transform: translateX(-50px);
 }
 
 #planet img {
     width: 100%;
     box-shadow: 0px 0px 20px rgba(94, 104, 193, 0.5);
     border-radius: 50%;
-}
-
-.title-filled h1 {
-    z-index: 1;
+    animation: float 3s infinite ease-in-out, slideInLeft 3s;
 }
 
 #job {
-    font-size: 4vw;
+    font-size: 2vw;
+    transform: translateX(0.5%);
     font-family: Poppins,
         sans-serif;
     font-weight: 800;
     color: transparent;
     -webkit-text-stroke: 1px #F5F5F5;
+    grid-row: 2/3;
+    z-index: 3;
 }
 
 .scroll-indicator {
     width: 12px;
     margin: 0 auto;
-    position: fixed;
+    position: absolute;
     bottom: 3%;
-    left: 50vw;
-    transform: translateX(-50%);
+    transform: translateX(1%);
     opacity: 0.5;
 }
 
@@ -278,6 +286,8 @@ li a:hover:before {
     animation-delay: 0.5s;
 }
 
+
+
 /* KEYFRAMES */
 @keyframes dot {
     0% {
@@ -296,6 +306,33 @@ li a:hover:before {
     }
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translate3d(-500%, 0, 0);
+        visibility: visible
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+/* RESPONSIVE */
 @media screen and (max-width: 425px) {
 
     /* HEADER*/
@@ -346,5 +383,36 @@ li a:hover:before {
         position: absolute;
         bottom: 130px;
         left: -120%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content-home {
+        transform: translateY(50px);
+    }
+
+    .title {
+        margin-left: 0px;
+    }
+
+    .title-outline,
+    .title-filled {
+        font-size: 10vw;
+    }
+
+    #planet {
+        width: 50vw;
+        position: absolute;
+        transform: translate(0px, -55vw);
+    }
+
+    #planet img {
+        animation: float 3s infinite ease-in-out;
+    }
+
+    #job {
+        font-size: 4vw;
+        text-align: center;
+        transform: translateX(0);
     }
 }
