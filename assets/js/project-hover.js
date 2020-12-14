@@ -1,98 +1,99 @@
-$(".project-img img").hover(
+$(".slyde").hover(
     function () {
-        $(this).addClass("hover");
+        $("#slyde-img").addClass("hover");
+        $(".slyde-title").addClass("hover");
     },
     function () {
-        $(this).removeClass("hover");
+        $("#slyde-img").removeClass("hover");
+        $(".slyde-title").removeClass("hover");
     }
 );
 
-$(".project-img-right img").hover(
+$(".mauvaise-rencontre").hover(
     function () {
-        $(this).addClass("hover");
+        $("#mauvaise-rencontre-img").addClass("hover");
+        $(".mauvaise-rencontre-title").addClass("hover");
     },
     function () {
-        $(this).removeClass("hover");
+        $("#mauvaise-rencontre-img").removeClass("hover");
+        $(".mauvaise-rencontre-title").removeClass("hover");
     }
 );
 
-$(".slyde-title").hover(
+$(".jpo-2021").hover(
     function () {
-        $("#slyde").addClass("hover");
+        $("#jpo-2021-img").addClass("hover");
+        $(".jpo-2021-title").addClass("hover");
     },
     function () {
-        $("#slyde").removeClass("hover");
+        $("#jpo-2021-img").removeClass("hover");
+        $(".jpo-2021-title").removeClass("hover");
     }
 );
 
-$(".mauvaise-rencontre-title").hover(
+$(".cv-video").hover(
     function () {
-        $("#mauvaise-rencontre").addClass("hover");
+        $("#cv-video-img").addClass("hover");
+        $(".cv-video-title").addClass("hover");
     },
     function () {
-        $("#mauvaise-rencontre").removeClass("hover");
+        $("#cv-video-img").removeClass("hover");
+        $(".cv-video-title").removeClass("hover");
     }
 );
 
-$(".jpo-2021-title").hover(
+$(".mmi-town").hover(
     function () {
-        $("#jpo-2021").addClass("hover");
+        $("#mmi-town-img").addClass("hover");
+        $(".mmi-town-title").addClass("hover");
     },
     function () {
-        $("#jpo-2021").removeClass("hover");
+        $("#mmi-town-img").removeClass("hover");
+        $(".mmi-town-title").removeClass("hover");
     }
 );
 
-$(".cv-video-title").hover(
+$(".cv-numerique").hover(
     function () {
-        $("#cv-video").addClass("hover");
+        $("#cv-numerique-img").addClass("hover");
+        $(".cv-numerique-title").addClass("hover");
     },
     function () {
-        $("#cv-video").removeClass("hover");
+        $("#cv-numerique-img").removeClass("hover");
+        $(".cv-numerique-title").removeClass("hover");
     }
 );
 
-$(".mmi-town-title").hover(
+$(".redesign-netflix").hover(
     function () {
-        $("#mmi-town").addClass("hover");
+        $("#redesign-netflix-img").addClass("hover");
+        $(".redesign-netflix-title").addClass("hover");
     },
     function () {
-        $("#mmi-town").removeClass("hover");
+        $("#redesign-netflix-img").removeClass("hover");
+        $(".redesign-netflix-title").removeClass("hover");
     }
 );
 
-$(".cv-numerique-title").hover(
+$(".portrait-chinois").hover(
     function () {
-        $("#cv-numerique").addClass("hover");
+        $("#portrait-chinois-img").addClass("hover");
+        $(".portrait-chinois-title").addClass("hover");
     },
     function () {
-        $("#cv-numerique").removeClass("hover");
+        $("#portrait-chinois-img").removeClass("hover");
+        $(".portrait-chinois-title").removeClass("hover");
     }
 );
 
-$(".redesign-netflix-title").hover(
-    function () {
-        $("#redesign-netflix").addClass("hover");
-    },
-    function () {
-        $("#redesign-netflix").removeClass("hover");
-    }
-);
 
-$(".portrait-chinois-title").hover(
+$(".jpo-2020").hover(
     function () {
-        $("#portrait-chinois").addClass("hover");
+        $("#jpo-2020-img").addClass("hover");
+        $(".jpo-2020-title").addClass("hover");
     },
     function () {
-        $("#portrait-chinois").removeClass("hover");
-    }
-);
-
-$(".jpo-2020-title").hover(
-    function () {
-        $("#jpo-2020").addClass("hover");
-    },
-    function () {
-        $("#jpo-2020").removeClass("hover");
+        $("#jpo-2020-img").removeClass("hover");
+        $(".jpo-2020-title").removeClass("hover");
     }
 );
