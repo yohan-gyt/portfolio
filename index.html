@@ -4,7 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" lang="fr" content="Yohan Guyot">
+    <meta name="description" content="Portfolio de Yohan Guyot, UX/UI designer. Découvrez mes projets !">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yohanguyot.fr/index.html">
+    <meta property="og:title" content="YOHAN GUYOT | PORTFOLIO">
+    <meta property="og:description" content="Portfolio de Yohan Guyot, UX/UI designer. Découvrez mes projets !">
+    <meta property="og:image" content="https://www.yohanguyot.fr/assets/img/card.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yohanguyot.fr/index.html">
+    <meta property="twitter:title" content="YOHAN GUYOT | PORTFOLIO">
+    <meta property="twitter:description" content="Portfolio de Yohan Guyot, UX/UI designer. Découvrez mes projets !">
+    <meta property="twitter:image" content="https://www.yohanguyot.fr/assets/img/card.jpg">
+
     <title>YOHAN GUYOT | PORTFOLIO</title>
+
     <link rel="shortcut icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,6 +29,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/ugb2gcr.css">
     <link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-touch-icon-120x120-precomposed.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-touch-icon-152x152-precomposed.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
 </head>
 
 <body>
@@ -34,7 +52,7 @@
                 <a href="index.html" class="noise">FR</a>
             </div>
             <div class="en">
-                <a href="#" class="noise">EN</a>
+                <a href="en/index.html" class="noise">EN</a>
             </div>
         </div>
 
@@ -54,7 +72,7 @@
         </div>
     </header>
 
-    <section id="home">
+    <section class="home">
         <div class="content-home">
             <div class="title">
                 <h1 class="title-filled noise">PORTFOLIO</h1>
@@ -62,250 +80,276 @@
                 <div id="job">UX/UI DESIGNER</div>
             </div>
             <div id="planet">
-                <img src="assets/img/planet.png" alt="" draggable="false">
+                <img src="assets/img/planet.png" alt="" draggable="false" onContextMenu="return false;">
             </div>
         </div>
         <div class="scroll-indicator">
             <div class="dots"></div>
         </div>
     </section>
+
     <section id="projects">
-        <div class="project-left">
+        <div class="project-left" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
+            data-aos-once="true">
             <div class="project-visual">
                 <div class="type noise">WEB</div>
                 <div class="num-line">
                     <div class="vert-line"></div>
                     <div class="num noise">1/9</div>
                 </div>
-                <a href="#" class="project-img">
-                    <img src="assets/img/slyde/slyde-cover.jpg" alt="" id="slyde-img" class="slyde" draggable="false"
-                        onselectstart="return false">
+                <a href="slyde.html" class="project-img">
+                    <img src="assets/img/slyde/slyde-cover.jpg" alt="" id="slyde-img" class="slyde" draggable="false">
                 </a>
             </div>
             <div class="project-title">
                 <div class="project-title-filled">
-                    <a href="#">
+                    <a href="slyde.html">
                         <h2 class="noise slyde-title">SLYDE</h2>
                     </a>
                 </div>
                 <div class="project-title-outline">
-                    <a href="#">
+                    <a href="slyde.html">
                         <h2 class="slyde slyde-title">SLYDE</h2>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="project-right">
+        <div class="project-right" data-aos="fade-left" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
+            data-aos-once="true">
             <div class="project-visual">
                 <div class="type-right noise">MOTION DESIGN</div>
                 <div class="num-line-right">
                     <div class="vert-line"></div>
                     <div class="num-right noise">2/9</div>
                 </div>
-                <a href="#" class="project-img-right">
+                <a href="mauvaise-rencontre.html" class="project-img-right">
                     <img src="assets/img/mauvaise-rencontre/mauvaise-rencontre-cover.jpg" alt=""
-                        id="mauvaise-rencontre-img" class="mauvaise-rencontre" draggable=" false">
+                        id="mauvaise-rencontre-img" class="mauvaise-rencontre" draggable="false">
                 </a>
             </div>
             <div class="project-title">
                 <div class="project-title-filled-right">
-                    <a href="#">
+                    <a href="mauvaise-rencontre.html">
                         <h2 class="noise mauvaise-rencontre-title">MAUVAISE<br>RENCONTRE</h2>
                     </a>
                 </div>
                 <div class="project-title-outline-right">
-                    <a href="#">
+                    <a href="mauvaise-rencontre.html">
                         <h2 class="mauvaise-rencontre mauvaise-rencontre-title">MAUVAISE<br>RENCONTRE</h2>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="project-left">
+        <div class="project-left" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
+            data-aos-once="true">
             <div class="project-visual">
                 <div class="type noise">AFFICHE</div>
                 <div class="num-line">
                     <div class="vert-line"></div>
                     <div class="num noise">3/9</div>
                 </div>
-                <a href="#" class="project-img">
+                <a href="jpo-2021.html" class="project-img">
                     <img src="assets/img/jpo-2021/jpo-2021-cover.jpg" alt="" id="jpo-2021-img" class="jpo-2021"
                         draggable="false">
                 </a>
             </div>
             <div class="project-title">
                 <div class="project-title-filled">
-                    <a href="#">
+                    <a href="jpo-2021.html">
                         <h2 class="noise jpo-2021-title">JPO 2021</h2>
                     </a>
                 </div>
                 <div class="project-title-outline">
-                    <a href="#">
+                    <a href="jpo-2021.html">
                         <h2 class="jpo-2021 jpo-2021-title">JPO 2021</h2>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="project-right">
+        <div class="project-right" data-aos="fade-left" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
+            data-aos-once="true">
             <div class="project-visual">
                 <div class="type-right noise">AUDIOVISUEL</div>
                 <div class="num-line-right">
                     <div class="vert-line"></div>
                     <div class="num-right noise">4/9</div>
                 </div>
-                <a href="#" class="project-img-right darker">
+                <a href="cv-video.html" class="project-img-right darker">
                     <img src="assets/img/cv-video/cv-video-cover.jpg" alt="" id="cv-video-img" class="cv-video"
                         draggable="false">
                 </a>
             </div>
             <div class="project-title">
                 <div class="project-title-filled-right">
-                    <a href="#">
+                    <a href="cv-video.html">
                         <h2 class="noise cv-video-title">CV VIDÉO</h2>
                     </a>
                 </div>
                 <div class="project-title-outline-right">
-                    <a href="#">
+                    <a href="cv-video.html">
                         <h2 class="cv-video cv-video-title">CV VIDÉO</h2>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="project-left">
+        <div class="project-left" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
+            data-aos-once="true">
             <div class="project-visual">
                 <div class="type noise">WEB</div>
                 <div class="num-line">
                     <div class="vert-line"></div>
                     <div class="num noise">5/9</div>
                 </div>
-                <a href="#" class="project-img">
+                <a href="mmi-town.html" class="project-img">
                     <img src="assets/img/mmi-town/mmi-town-cover.jpg" alt="" id="mmi-town-img" class="mmi-town"
                         draggable="false">
                 </a>
             </div>
             <div class="project-title">
                 <div class="project-title-filled">
-                    <a href="#">
+                    <a href="mmi-town.html">
                         <h2 class="noise mmi-town-title">MMI TOWN</h2>
                     </a>
                 </div>
                 <div class="project-title-outline">
-                    <a href="#">
+                    <a href="mmi-town.html">
                         <h2 class="mmi-town mmi-town-title">MMI TOWN</h2>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="project-right">
+        <div class="project-right" data-aos="fade-left" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
+            data-aos-once="true">
             <div class="project-visual">
                 <div class="type-right noise">WEB</div>
                 <div class="num-line-right">
                     <div class="vert-line"></div>
                     <div class="num-right noise">6/9</div>
                 </div>
-                <a href="#" class="project-img-right darker">
+                <a href="cv-numerique.html" class="project-img-right darker">
                     <img src="assets/img/cv-numerique/cv-numerique-cover.jpg" alt="" id="cv-numerique-img"
                         class="cv-numerique" draggable="false">
                 </a>
             </div>
             <div class="project-title">
                 <div class="project-title-filled-right">
-                    <a href="#">
+                    <a href="cv-numerique.html">
                         <h2 class="noise cv-numerique-title">CV<br>NUMÉRIQUE</h2>
                     </a>
                 </div>
                 <div class="project-title-outline-right">
-                    <a href="#">
+                    <a href="cv-numerique.html">
                         <h2 class="cv-numerique cv-numerique-title">CV<br>NUMÉRIQUE</h2>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="project-left">
+        <div class="project-left" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
+            data-aos-once="true">
             <div class="project-visual">
                 <div class="type noise">MOCK-UP</div>
                 <div class="num-line">
                     <div class="vert-line"></div>
                     <div class="num noise">7/9</div>
                 </div>
-                <a href="#" class="project-img">
+                <a href="redesign-netflix.html" class="project-img">
                     <img src="assets/img/redesign-netlix/redesign-netflix-cover.jpg" alt="" id="redesign-netflix-img"
                         class="redesign-netflix " draggable="false">
                 </a>
             </div>
             <div class="project-title">
                 <div class="project-title-filled">
-                    <a href="#">
+                    <a href="redesign-netflix.html">
                         <h2 class="noise redesign-netflix-title">REDESIGN<br>NETFLIX</h2>
                     </a>
                 </div>
                 <div class="project-title-outline">
-                    <a href="#">
+                    <a href="redesign-netflix.html">
                         <h2 class="redesign-netflix redesign-netflix-title">REDESIGN<br>NETFLIX</h2>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="project-right">
+        <div class="project-right" data-aos="fade-left" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
+            data-aos-once="true">
             <div class="project-visual">
                 <div class="type-right noise">WEB</div>
                 <div class="num-line-right">
                     <div class="vert-line"></div>
                     <div class="num-right noise">8/9</div>
                 </div>
-                <a href="#" class="project-img-right">
+                <a href="portrait-chinois.html" class="project-img-right">
                     <img src="assets/img/portrait-chinois/portrait-chinois-cover.jpg" alt="" id="portrait-chinois-img"
                         class="portrait-chinois " draggable="false">
                 </a>
             </div>
             <div class="project-title">
                 <div class="project-title-filled-right">
-                    <a href="#">
+                    <a href="portrait-chinois.html">
                         <h2 class="noise portrait-chinois-title">PORTRAIT<br>CHINOIS</h2>
                     </a>
                 </div>
                 <div class="project-title-outline-right">
-                    <a href="#">
+                    <a href="portrait-chinois.html">
                         <h2 class="portrait-chinois portrait-chinois-title">PORTRAIT<br>CHINOIS</h2>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="project-left">
+        <div class="project-left" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="top-bottom"
+            data-aos-once="true">
             <div class="project-visual">
                 <div class="type noise">AFFICHE</div>
                 <div class="num-line">
                     <div class="vert-line"></div>
                     <div class="num noise">9/9</div>
                 </div>
-                <a href="#" class="project-img">
+                <a href="jpo-2020.html" class="project-img">
                     <img src="assets/img/jpo-2020/jpo-2020-cover.jpg" alt="" id="jpo-2020-img" class="jpo-2020"
                         draggable="false">
                 </a>
             </div>
             <div class="project-title">
                 <div class="project-title-filled">
-                    <a href="#">
+                    <a href="jpo-2020.html">
                         <h2 class="noise jpo-2020-title">JPO 2020</h2>
                     </a>
                 </div>
                 <div class="project-title-outline">
-                    <a href="#">
+                    <a href="jpo-2020.html">
                         <h2 class="jpo-2020 jpo-2020-title">JPO 2020</h2>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="assets/js/project-hover.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/kursor"></script>
+    <script>
+        AOS.init({
+            disable: function () {
+                return window.innerWidth <= 768;
+            }
+        });
+
+        new kursor({
+            type: 4,
+            removeDefaultCursor: true,
+            color: "#F5F5F5"
+        });
+    </script>
 </body>
 
 </html>
