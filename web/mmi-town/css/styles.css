@@ -1,0 +1,1028 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+
+@font-face {
+	font-family: "lemon milk";
+	src: url("../fonts/lemonmilk-bold.woff2") format("woff2"),
+		url("../fonts/lemonmilk-bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "lemon milk";
+	src: url("../fonts/lemonmilk-bolditalic.woff2") format("woff2"),
+		url("../fonts/lemonmilk-bolditalic.woff") format("woff");
+	font-weight: bold;
+	font-style: italic;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	outline: none;
+	overflow: hidden;
+}
+
+html {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.5;
+	color: white;
+}
+
+body {
+	background-color: rgb(19, 3, 36);
+	margin: 0;
+}
+
+.noSelect {
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* PARALLAX HEADER - PAGE D'ACCUEIL */
+header {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	z-index: 0;
+	background-color: #ffbfa3;
+}
+
+header .parallax {
+	position: absolute;
+	display: block;
+	bottom: -5px;
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
+	top: 0px;
+}
+
+header .parallax .one,
+header .parallax .two,
+header .parallax .three,
+header .parallax .four,
+header .parallax .five,
+header .parallax .six,
+header .parallax .seven {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+header .parallax .one {
+	background-image: url("../img/parallax/collines/accueil-colline-1.png");
+	z-index: 0;
+	background-position: bottom;
+}
+
+header .parallax .two {
+	background-image: url("../img/parallax/collines/accueil-colline-2.png");
+	z-index: -1;
+	background-position: bottom;
+}
+
+header .parallax .three {
+	background-image: url("../img/parallax/collines/accueil-colline-3.png");
+	z-index: -2;
+	background-position: bottom;
+}
+
+header .parallax .four {
+	background-image: url("../img/parallax/collines/accueil-colline-4.png");
+	z-index: -3;
+	background-position: bottom;
+}
+
+header .parallax .five {
+	background-image: url("../img/parallax/collines/accueil-colline-5.png");
+	z-index: -4;
+	background-position: bottom;
+}
+
+header .parallax .six {
+	background-image: url("../img/parallax/batiments/batiments.png");
+	z-index: -5;
+	background-position: bottom;
+}
+
+header .parallax .seven {
+	background-image: url("../img/parallax/accueil-bg.png");
+	z-index: -6;
+	background-size: cover;
+}
+
+/* BARRE DE NAVIGATION */
+.fixed {
+	position: absolute;
+	top: 0;
+}
+
+.fixed ul {
+	display: flex;
+	position: fixed;
+	top: 0.5rem;
+	right: 30px;
+	list-style: none;
+	z-index: 1000;
+}
+
+.fixed a {
+	padding: 0.5rem;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-family: "lemon milk", sans-serif;
+	font-weight: bold;
+	color: white;
+	margin-left: 20px;
+}
+
+.fixed img {
+	position: fixed;
+	top: 20px;
+	left: 30px;
+	width: 100px;
+	width: 5vw;
+	z-index: 1000;
+}
+
+.fixed a,
+.fixed a:after,
+.fixed a:before {
+	transition: all 0.5s;
+}
+
+.fixed ul,
+.fixed li,
+.fixed a {
+	overflow: visible;
+}
+
+.fixed ul li a {
+	position: relative;
+}
+
+.fixed ul li a:after {
+	position: absolute;
+	top: 35px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: ".";
+	color: transparent;
+	background: white;
+	height: 3px;
+	pointer-events: none;
+}
+
+.fixed ul li a:hover:after {
+	width: 90%;
+}
+
+/* SECTION MMI C'EST QUOI ? */
+section {
+	width: 100vw;
+	min-height: 100vh;
+}
+
+.def-mmi {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../img/mmi-bg.png");
+	background-size: cover;
+}
+
+.def-mmi .container {
+	display: grid;
+	grid-template-columns: 10vw auto 5vw auto 10vw;
+	grid-template-rows: auto auto;
+}
+
+.definition {
+	grid-column: 2/3;
+	grid-row: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h1 {
+	font-family: "lemon milk", sans-serif;
+	font-style: italic;
+	font-size: 1.9rem;
+	margin-bottom: 0;
+}
+
+p {
+	max-width: 800px;
+	margin-bottom: 70px;
+	font-size: 1.3rem;
+	font-family: "raleway", sans-serif;
+	font-weight: 300;
+}
+
+.icones {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	grid-column: 4/5;
+	grid-row: 1/3;
+}
+
+.icones img {
+	max-width: 120px;
+}
+
+.button {
+	grid-column: 2/3;
+	grid-row: 2;
+	text-align: center;
+	overflow: visible;
+}
+
+.button a,
+.button p {
+	border: white solid 2px;
+	padding: 1rem 1rem 0.8rem 1rem;
+	text-decoration: none;
+	font-size: 1rem;
+	font-family: "lemon milk", sans-serif;
+	font-weight: 500;
+	color: white;
+	transition: 0.3s ease;
+}
+
+.button a:hover,
+.button p:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	transition: 0.3s ease;
+}
+
+/* SECTION COMMENCER */
+#metiers {
+	width: 100vw;
+	height: 100vh;
+}
+
+#metiers .fp-controlArrow.fp-next,
+#metiers .fp-controlArrow.fp-prev {
+	display: none;
+}
+
+.commencer,
+.bat,
+.cover-top,
+.cover-bottom,
+.cover-top2,
+.cover-top3,
+.cover-top4,
+.cover-top5,
+.audiovisuel,
+.design,
+.dev,
+.com {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	z-index: -1;
+}
+
+.commencer {
+	background-image: url("../img/commencer/bg-commencer.png");
+}
+
+.bat {
+	background-image: url("../img/commencer/bat-commencer.png");
+}
+
+.cover-top {
+	background-image: url("../img/commencer/cover-commencer.png");
+	background-position: top;
+}
+
+.cover-top2,
+.cover-top3,
+.cover-top4,
+.cover-top5 {
+	background-image: url("../img/commencer/cover-top.png");
+	background-position: top;
+}
+
+.cover-bottom {
+	background-image: url("../img/commencer/cover-commencer.png");
+}
+
+.container-commencer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container-commencer p {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.container-commencer .button p {
+	padding: 1rem 4rem 0.8rem 4rem;
+	border: white solid 5px;
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+
+/* UNIVERS */
+.audiovisuel,
+.design,
+.dev,
+.com {
+	background-position: center;
+}
+
+.audiovisuel {
+	background-image: url("../img/univers/etage-audiovisuel.png");
+	left: 100vw;
+}
+
+.design {
+	background-image: url("../img/univers/etage-design.png");
+	left: 200vw;
+}
+
+.dev {
+	background-image: url("../img/univers/etage-dev.png");
+	left: 300vw;
+}
+
+.com {
+	background-image: url("../img/univers/etage-com.png");
+	left: 400vw;
+}
+
+.cover-top2 {
+	left: 100vw;
+}
+
+.cover-top3 {
+	left: 200vw;
+}
+
+.cover-top4 {
+	left: 300vw;
+}
+
+.cover-top5 {
+	left: 400vw;
+}
+
+/* PERSOS UNIVERS */
+/* AUDIOVISUEL */
+.persos {
+	width: 100vw;
+	position: absolute;
+	bottom: 0;
+}
+
+.perso {
+	display: inline-block;
+	position: relative;
+	margin-bottom: 1.3vh;
+}
+
+.perso img {
+	height: 50vh;
+}
+
+.real {
+	left: 22%;
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+}
+
+.real:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+.videaste {
+	left: 55vw;
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+}
+
+.videaste:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+/* DESIGN */
+.ui {
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+	left: 10%;
+}
+
+.ui:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+.ux {
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+	left: 20%;
+}
+
+.ux:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+.graphiste {
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+	left: 40%;
+}
+
+.graphiste:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+.webdesigner {
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+	left: 50%;
+}
+
+.webdesigner:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+/* DÉVELOPPEMENT */
+.reseaux {
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+	left: 12%;
+}
+
+.reseaux:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+.back-end {
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+	left: 18%;
+}
+
+.back-end:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+.devweb {
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+	left: 38%;
+}
+
+.devweb:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+.front-end {
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+	left: 46%;
+}
+
+.front-end:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+/* COMMUNICATION */
+.charge-com {
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+	left: 15%;
+}
+
+.charge-com:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+.webmarketer {
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+	left: 25%;
+}
+
+.webmarketer:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+.chef {
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+	left: 33%;
+}
+
+.chef:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+.manager {
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+	left: 38%;
+}
+
+.manager:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+.webmaster {
+	filter: brightness(60%);
+	transition: ease-out 0.2s;
+	left: 46%;
+}
+
+.webmaster:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+/* SECTION ÉQUIPE */
+.equipe {
+	background-image: url("../img/mmi-bg.png");
+	background-size: cover;
+}
+
+.equipe .container {
+	display: grid;
+	grid-template-columns: 5vw repeat(4, auto) 5vw;
+	grid-template-rows: auto auto;
+	grid-gap: 3vw;
+	padding-top: 5vh;
+}
+
+.texte {
+	grid-row: 1;
+	grid-column: 2/6;
+	text-align: center;
+	margin: auto;
+}
+
+.minal {
+	grid-column: 2/3;
+	grid-row: 2;
+}
+
+.jules {
+	grid-column: 3/4;
+	grid-row: 2;
+}
+
+.rachel {
+	grid-column: 4/5;
+	grid-row: 2;
+}
+
+.yohan {
+	grid-column: 5/6;
+	grid-row: 2;
+}
+
+.card {
+	display: grid;
+	grid-template-rows: repeat(5, auto);
+}
+
+.profil {
+	grid-row: 1;
+	margin: auto;
+	width: 180px;
+	height: 180px;
+}
+
+.card h2 {
+	grid-row: 2;
+	margin-bottom: 0;
+	text-align: center;
+	font-family: "lemon milk", sans-serif;
+	font-size: 1.3rem;
+}
+
+.card h3 {
+	grid-row: 3;
+	margin-top: 5px;
+	text-align: center;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.card p {
+	max-width: 350px;
+	grid-row: 4;
+	margin: auto;
+	font-size: 1.2rem;
+	min-height: 280px;
+}
+
+.icons {
+	grid-row: 5;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.icons img {
+	filter: brightness(70%);
+	transition: ease-out 0.2s;
+}
+
+.icons img:hover {
+	filter: brightness(100%);
+	transition: ease-in 0.2s;
+}
+
+@media screen and (max-width: 950px) {
+	.equipe .container {
+		grid-template-columns: 5vw repeat(2, auto) 5vw;
+		grid-template-rows: auto auto auto;
+		grid-gap: 5vw;
+	}
+
+	.texte {
+		grid-column: 2/4;
+		grid-row: 1;
+	}
+
+	.jules {
+		grid-column: 3/4;
+		grid-row: 2;
+	}
+
+	.rachel {
+		grid-column: 2/3;
+		grid-row: 3;
+	}
+
+	.yohan {
+		grid-column: 3/4;
+		grid-row: 3;
+	}
+}
+
+/* PAGE FILIÈRE */
+.filiere,
+.contact,
+.success {
+	background-image: url("../img/mmi-bg.png");
+	background-size: cover;
+}
+
+.cases {
+	display: grid;
+	grid-template-columns: 5vw 40.5vw 40.5vw 5vw;
+	grid-template-rows: auto auto;
+	grid-gap: 3vw;
+	padding-top: 3vw;
+	padding-bottom: 3vw;
+}
+
+.case {
+	background: #220e31;
+	box-shadow: 10px 10px 25px rgb(19, 3, 36);
+	padding: 20px 50px 0 50px;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
+.case-art .title,
+.case-sciences .title {
+	justify-content: flex-end;
+}
+
+.title h2 {
+	font-family: "lemon milk", sans-serif;
+	font-size: 1.3rem;
+	font-style: italic;
+}
+
+.case h3 {
+	font-family: "lemon milk", sans-serif;
+	font-size: 1.05rem;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.title img {
+	width: 100px;
+}
+
+.case p {
+	margin: 0;
+	font-size: 1.2rem;
+	margin-bottom: 50px;
+}
+
+.case-info {
+	grid-column: 2/3;
+	grid-row: 1;
+}
+
+.case-art {
+	grid-column: 3/4;
+	grid-row: 1;
+	text-align: right;
+}
+
+.case-com {
+	grid-column: 2/3;
+	grid-row: 2;
+}
+
+.case-sciences {
+	grid-column: 3/4;
+	grid-row: 2;
+	text-align: right;
+}
+
+/* NOUS CONTACTER */
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact h1 {
+	margin: 0;
+	padding-top: 10vh;
+	margin-bottom: 8vh;
+}
+
+.contact-form {
+	text-align: center;
+}
+
+.contact-form .name {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.mail,
+.sujet {
+	margin-bottom: 15px;
+}
+
+.message {
+	margin-bottom: 30px;
+}
+
+input[name="prenom"],
+input[name="nom"] {
+	width: 240px;
+}
+
+.form-wrapper * {
+	width: 500px;
+}
+
+input,
+textarea {
+	border: 2px solid rgba(114, 167, 167, 0.1);
+	box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.02);
+	font-family: "raleway", sans-serif;
+	font-size: 1.2rem;
+	padding: 5px;
+	outline: none;
+	color: rgb(19, 3, 36);
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: rgb(173, 139, 196);
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: rgb(173, 139, 196);
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: rgb(173, 139, 196);
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+	color: rgb(173, 139, 196);
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: rgb(173, 139, 196);
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: rgb(173, 139, 196);
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: rgb(173, 139, 196);
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+	color: rgb(173, 139, 196);
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: rgb(173, 139, 196);
+}
+
+input:focus,
+textarea:focus {
+	border: 2px solid rgb(173, 139, 196);
+	transition: 0.2s ease-in;
+}
+
+textarea {
+	height: 200px;
+	resize: none;
+}
+
+.button button {
+	border: white solid 2px;
+	padding: 1rem 1rem 0.8rem 1rem;
+	width: 200px;
+	text-decoration: none;
+	font-size: 1rem;
+	font-family: "lemon milk", sans-serif;
+	font-weight: 500;
+	transition: 0.3s ease;
+	background-color: transparent;
+	color: white;
+}
+
+.button button:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+
+/* SUCCESS */
+.success {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.success p {
+	font-family: "lemon milk", sans-serif;
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+/* FICHES MÉTIER */
+#filiere,
+#metier {
+	overflow-y: auto;
+}
+
+.metier {
+	background-image: url("../img/mmi-bg.png");
+	background-size: cover;
+	padding-bottom: 50px;
+}
+
+.texte_metier {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.texte_metier h3 {
+	margin-bottom: 0;
+	margin-top: 40px;
+	color: rgb(197, 165, 218);
+	font-style: italic;
+	font-family: "lemon milk", sans-serif;
+	font-size: 1rem;
+}
+
+.texte_metier h1 {
+	margin-top: 10px;
+}
+
+.metierContent {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 15px;
+}
+
+.slider {
+	display: flex;
+	align-items: center;
+	margin-left: 8vw;
+}
+
+@media screen and (min-width: 1580px) {
+	.metierContent {
+		padding-bottom: 0;
+	}
+}
+
+.slides {
+	background: #220e31;
+	width: 800px;
+	box-shadow: 10px 10px 25px rgb(19, 3, 36);
+	padding: 10px 30px 30px 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.previous,
+.next {
+	border: white solid 2px;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	transition: 0.3s ease;
+	background-color: transparent;
+	color: white;
+	margin: 0;
+}
+
+.previous:hover,
+.next:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+
+.slider h2 {
+	font-family: "lemon milk";
+	font-size: 1.5rem;
+	font-style: italic;
+}
+
+.slider p {
+	margin-bottom: 0;
+}
+
+.metier img {
+	width: 120%;
+	height: 120%;
+}
+
+::-moz-selection {
+	color: white;
+	background-color: rgb(197, 165, 218);
+}
+
+::selection {
+	color: white;
+	background-color: rgb(197, 165, 218);
+}
