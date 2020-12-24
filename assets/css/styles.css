@@ -781,41 +781,80 @@ video:focus {
 }
 
 /* JPO 2021 */
-.jpo-2021-affiche {
+.jpo-2021-affiche,
+.jpo-2020-affiche {
     width: 50%;
     height: 100%;
     margin: auto;
 }
 
-.jpo-2021-wrapper {
+.jpo-2021-wrapper,
+.cv-numerique-wrapper,
+.netflix-wrapper {
     margin-top: 10%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .jpo-2021-brut,
-.illustration {
+.illustration,
+.accueil-mobile,
+.formation-mobile,
+.jpo-2021-retouche,
+.projets-mobile,
+.portait-chinois-accueil-mobile,
+.portait-chinois-page-mobile {
     margin: auto;
     width: 30%;
     height: 100%;
 }
 
-.jpo-2021-retouche {
-    margin: auto;
-    width: 30%;
-    height: 100%;
-}
-
-/* MMI TOWN */
-.mmi-town {
+/* MMI TOWN & CV NUMÉRIQUE*/
+.mmi-town,
+.cv-numerique,
+.portrait-chinois {
     width: 100%;
     height: 100%;
     margin: auto;
 }
 
-.desc-mmi {
+.desc-mmi,
+.portrait-chinois-page {
     margin-top: 10%;
     margin-bottom: 10%;
+}
+
+.modal-projet {
+    margin-top: 10%;
+}
+
+/* NETFLIX */
+.netflix-profil,
+.netflix-rechercher,
+.netflix-liste,
+.netflix-plus,
+.netflix-film,
+.netflix-chat,
+.netflix-accueil,
+.netflix-telechargement,
+.netflix-accueil-party {
+    margin: auto;
+    width: 35%;
+    height: 100%;
+}
+
+.netflix-player {
+    width: 55%;
+    height: 100%;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: -5%;
+}
+
+/* PORTRAIT CHINOIS */
+.portrait-chinois-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 /* CREDITS */
@@ -1103,25 +1142,59 @@ video:focus {
         font-size: 3.5vw;
     }
 
-    /* JPO 2021 */
+    /* PROJECT GALLERY */
     .jpo-2021-affiche {
         width: 100%;
     }
 
-    .jpo-2021-wrapper {
+    .jpo-2021-wrapper,
+    .cv-numerique-wrapper,
+    .netflix-wrapper,
+    .portrait-chinois-wrapper {
         display: block;
     }
 
     .jpo-2021-brut,
+    .jpo-2021-retouche,
     .illustration,
-    .jpo-2021-retouche {
+    .accueil-mobile,
+    .formation-mobile,
+    .projets-mobile,
+    .portait-chinois-accueil-mobile,
+    .portait-chinois-page-mobile {
         display: block;
         width: 80%;
     }
 
-    .jpo-2021-retouche {
+    .netflix-profil,
+    .netflix-rechercher,
+    .netflix-liste,
+    .netflix-plus,
+    .netflix-film,
+    .netflix-chat,
+    .netflix-accueil,
+    .netflix-telechargement,
+    .netflix-accueil-party {
+        display: block;
+        width: 100%;
+    }
+
+    .jpo-2021-retouche,
+    .formation-mobile,
+    .netflix-accueil,
+    .netflix-telechargement,
+    .netflix-accueil-party {
         margin-top: 10%;
         margin-bottom: 10%;
+    }
+
+    .netflix-player {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .portait-chinois-page-mobile {
+        margin-top: 10%;
     }
 }
 
