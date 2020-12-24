@@ -1143,7 +1143,8 @@ video:focus {
     }
 
     /* PROJECT GALLERY */
-    .jpo-2021-affiche {
+    .jpo-2021-affiche,
+    .jpo-2020-affiche {
         width: 100%;
     }
 
