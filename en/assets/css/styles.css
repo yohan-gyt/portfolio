@@ -1160,12 +1160,6 @@ video:focus {
         bottom: 60px;
     }
 
-    /* HOME */
-    .content-home,
-    .content-present {
-        transform: translateY(0);
-    }
-
     /* PROJECTS */
     .project-left,
     .project-right {
@@ -1301,6 +1295,11 @@ video:focus {
 @media screen and (max-width: 567px) {
 
     /* HOME */
+    .content-home,
+    .content-present {
+        transform: translateY(90%);
+    }
+
     .title {
         margin-left: 0px;
     }
@@ -1419,12 +1418,12 @@ video:focus {
         font-size: 0.8rem;
     }
 
-    .fr a::after {
-        top: 20px;
+    .en a::after {
+        top: 54px;
         width: 1rem;
     }
 
-    .en a:after {
+    .fr a::after {
         display: none;
     }
 
@@ -1441,10 +1440,6 @@ video:focus {
         font-size: 0.5rem;
         left: 26px;
         bottom: 45px;
-    }
-
-    .content-home {
-        transform: translateY(90%);
     }
 
     /* PROJECTS */
