@@ -91,3 +91,16 @@ $(".close").hover(
          $(".animated-line").removeClass("line-2-hover");
     }
 );
+
+$("a").hover(
+    function () {
+        $(".kursor, kursorChild").addClass("--hover");
+        $(".kursor").addClass("opacity-kursor");
+        $(".kursorChild").addClass("opacity-kursorChild");
+    },
+    function () {
+        $(".kursor, kursorChild").removeClass("--hover");
+        $(".kursor").removeClass("opacity-kursor");
+        $(".kursorChild").removeClass("opacity-kursorChild");
+    }
+);
