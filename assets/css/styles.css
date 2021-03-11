@@ -825,14 +825,6 @@ li a:hover:before {
     flex-direction: column;
 }
 
-/* À VENIR */
-.coming-soon {
-    font-family: aktiv-grotesk-extended, sans-serif;
-    font-weight: 800;
-    font-size: 6vw;
-    margin: auto;
-}
-
 /* MAUVAISE RENCONTRE */
 video {
     width: 100%;
@@ -872,7 +864,8 @@ video:focus {
     height: 100%;
 }
 
-/* MMI TOWN & CV NUMÉRIQUE*/
+/* SLYDE, MMI TOWN, CV NUMÉRIQUE, PORTRAIT CHINOIS*/
+.slyde,
 .mmi-town,
 .cv-numerique,
 .portrait-chinois {
@@ -881,6 +874,7 @@ video:focus {
     margin: auto;
 }
 
+.slyde-mid,
 .desc-mmi,
 .portrait-chinois-page {
     margin-top: 10%;
