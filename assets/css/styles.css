@@ -187,14 +187,12 @@ li a:hover:before {
 #social img {
     width: 1.5rem;
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-
 }
 
 #social img:hover {
     -webkit-filter: brightness(60%);
     filter: brightness(60%);
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-
 }
 
 .copyright {
